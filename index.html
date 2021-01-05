@@ -10,8 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body draggable="false">
+<body>
+    <main>
+        <div class="controls">
 
+            <button id="clearAll">clear</button>
+            <div class="currentColor">
+                <label for="current" id="colorLabel">Current</label>
+                <div id="currentColor"></div>
+            </div>
+            <label for="none" id="gridLineLabel">Grid Lines<input type="checkbox" checked id="gridLine"></label>
+            <form class="form" action=""> <label for="size" id="sizeLabel">Size</label>
+                <input name="size" id="input" type="range" min="1" max="50" value="10">
+            </form>
+
+        </div>
+    </main>
 
     <script src="app.js"></script>
 
