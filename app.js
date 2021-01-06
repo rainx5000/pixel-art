@@ -105,16 +105,16 @@ paintBoard.addEventListener('mousemove', (e) => {
 //color pallet
 //colors [blue, red, purple, green, yellow, orange, white, black]
 
-const allColors = ['blue', 'red', 'purple', 'green', 'yellow', 'orange', 'white', 'black']; //small color pallet 
+const allColors = ['blue', 'red', 'purple', 'green', 'yellow', 'orange', 'white', 'black', 'saddlebrown']; //small color pallet 
 let chosenColor = ['blue']; //default brush color is blue
 document.querySelector('#currentColor').style.backgroundColor = ['blue'];//default current color showcaser
 
 const colorChoice = document.createElement('div');
-document.body.appendChild(colorChoice);
+main.appendChild(colorChoice);
 colorChoice.classList.add('colorPicker');
 
 
-for (let i = 0; i < 8; i++) {
+for (let i = 0; i < 9; i++) {
     const pixel = document.createElement('div')
     document.querySelector('.colorPicker').appendChild(pixel);
     pixel.classList.add('color');
@@ -201,8 +201,6 @@ custom.addEventListener('click', (e) => {
 //custom color//
 
 //eraser
-
-
 const eraser = document.querySelector('.eraser')
 eraser.addEventListener('click', (e) => {
     chosenColor = ['white']
@@ -211,11 +209,6 @@ eraser.addEventListener('click', (e) => {
         eraser.classList.toggle('eraserActive')
     }
 })
-
-
-
-
-
 //eraser
 
 //
