@@ -391,5 +391,4 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #163F6E;
 }
-
 /* input range custom styles */
